@@ -1,4 +1,3 @@
-
 fn simple_branch(flg: bool) -> String {
     if flg {
         "true branch".to_string()
