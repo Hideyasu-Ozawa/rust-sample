@@ -28,8 +28,8 @@ mod tests {
         assert_eq!("false branch", simple_branch(false));
     }
 
-    #[test]
-    fn mian() {
-        assert_eq!((), main());
-    }
+    // #[test]
+    // fn mian() {
+    //     assert_eq!((), main());
+    // }
 }
