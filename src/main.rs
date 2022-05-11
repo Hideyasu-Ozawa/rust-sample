@@ -1,5 +1,5 @@
-// use rand::Rng;
-fn simple_branch(flg: bool) -> String{
+
+fn simple_branch(flg: bool) -> String {
     if flg {
         "true branch".to_string()
     } else {
@@ -9,10 +9,6 @@ fn simple_branch(flg: bool) -> String{
 
 fn main() {
     println!("Hello, world!");
-
-    // let mut rng = rand::thread_rng();
-    // let i: i32 = rng.gen();
-    // println!("i = {}", i);
 
     let flg = false;
 
@@ -28,8 +24,13 @@ mod tests {
         assert_eq!("true branch", simple_branch(true));
     }
 
-    // #[test]
-    // fn false_branch() {
-    //     assert_eq!("false branch", simple_branch(false));
-    // }
+    #[test]
+    fn false_branch() {
+        assert_eq!("false branch", simple_branch(false));
+    }
+
+    #[test]
+    fn mian() {
+        assert_eq!((), main());
+    }
 }
